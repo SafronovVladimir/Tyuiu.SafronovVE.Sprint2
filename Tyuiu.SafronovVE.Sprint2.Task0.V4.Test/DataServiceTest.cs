@@ -8,10 +8,10 @@ namespace Tyuiu.SafronovVE.Sprint2.Task0.V4.Test
         public void ValidGetCompareOperations()
         {
             DataService ds = new DataService();
-            int x = 332;
+            int x = 333;
             int y = 324;
             bool[] res = new bool[6];
-            res = ds.GetCompareOperation(x, y);
+            res = ds.GetCompareOperations(x, y);
             bool[] wait = new bool[6] { false, true, false, true, false, true };
 
             CollectionAssert.AreEqual(wait, res);
