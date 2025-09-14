@@ -17,15 +17,15 @@ namespace Tyuiu.SafronovVE.Sprint2.Task6.V6.Lib
             }
             switch (value2)
             {
-                case 6: res = "Шестерка " + res; break;
-                case 7: res = "Семерка " + res; break;
-                case 8: res = "Восьмерка " + res; break;
-                case 9: res = "Девятка " + res; break;
-                case 10: res = "Десятка " + res; break;
-                case 11: res = "Валет " + res; break;
-                case 12: res = "Дама " + res; break;
-                case 13: res = "Король " + res; break;
-                case 14: res = "Туз " + res; break;
+                case 6: res = "шестерка " + res; break;
+                case 7: res = "семерка " + res; break;
+                case 8: res = "восьмерка " + res; break;
+                case 9: res = "девятка " + res; break;
+                case 10: res = "десятка " + res; break;
+                case 11: res = "валет " + res; break;
+                case 12: res = "дама " + res; break;
+                case 13: res = "король " + res; break;
+                case 14: res = "туз " + res; break;
                 default: throw new ArgumentException($"Достоинство карты должно быть от 6 до 14. Значение {value2}");
             }
             return res;
