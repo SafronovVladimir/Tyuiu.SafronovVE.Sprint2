@@ -27,7 +27,7 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        Console.WriteLine("Введите номер месяца: ");
+        Console.WriteLine("Введите количество прошедших месяцев: ");
         n = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("***************************************************************************");
