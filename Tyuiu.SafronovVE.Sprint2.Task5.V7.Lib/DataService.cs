@@ -6,7 +6,7 @@ namespace Tyuiu.SafronovVE.Sprint2.Task5.V7.Lib
         public string FindMonthName(int startYear, int n)
         {
             string res;
-            switch (startYear + n)
+            switch (n)
             {
                 case 1:
                     res = "Январь";
@@ -45,7 +45,7 @@ namespace Tyuiu.SafronovVE.Sprint2.Task5.V7.Lib
                     res = "Декабрь";
                     break;
                 default:
-                    throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {startYear + n}");
+                    throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {n}");
             }
             return res;
         }

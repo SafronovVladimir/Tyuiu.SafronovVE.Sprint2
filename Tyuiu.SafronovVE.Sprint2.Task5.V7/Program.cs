@@ -27,16 +27,21 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        Console.WriteLine("Введите количество месяцев, которое прошло с начала года: ");
+        Console.WriteLine("Введите номер месяца: ");
         n = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-
+        if (n > 0 && n < 13)
+        { 
         string res = ds.FindMonthName(startYear, n);
         Console.WriteLine("Месяц: " + res);
-
-        Console.ReadLine();
+        }
+        else
+        {
+            Console.WriteLine("Введено неверное количество месяцев. ");
+        }
+            Console.ReadLine();
     }
 }

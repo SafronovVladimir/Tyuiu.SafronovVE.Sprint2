@@ -9,26 +9,26 @@ namespace Tyuiu.SafronovVE.Sprint2.Task5.V7.Test
         {
             DataService ds = new DataService();
 
-            Assert.AreEqual("Январь", ds.FindMonthName(1, 0));
-            Assert.AreEqual("Февраль", ds.FindMonthName(1, 1));
-            Assert.AreEqual("Март", ds.FindMonthName(1, 2));
-            Assert.AreEqual("Апрель", ds.FindMonthName(1, 3));
-            Assert.AreEqual("Май", ds.FindMonthName(1, 4));
-            Assert.AreEqual("Июнь", ds.FindMonthName(1, 5));
-            Assert.AreEqual("Июль", ds.FindMonthName(1, 6));
-            Assert.AreEqual("Август", ds.FindMonthName(1, 7));
-            Assert.AreEqual("Сентябрь", ds.FindMonthName(1, 8));
-            Assert.AreEqual("Октябрь", ds.FindMonthName(1, 9));
-            Assert.AreEqual("Ноябрь", ds.FindMonthName(1, 10));
-            Assert.AreEqual("Декабрь", ds.FindMonthName(1, 11));
+            Assert.AreEqual("Январь", ds.FindMonthName(1990, 1));
+            Assert.AreEqual("Февраль", ds.FindMonthName(1990, 2));
+            Assert.AreEqual("Март", ds.FindMonthName(1990, 3));
+            Assert.AreEqual("Апрель", ds.FindMonthName(1990, 4));
+            Assert.AreEqual("Май", ds.FindMonthName(1990, 5));
+            Assert.AreEqual("Июнь", ds.FindMonthName(1990, 6));
+            Assert.AreEqual("Июль", ds.FindMonthName(1990, 7));
+            Assert.AreEqual("Август", ds.FindMonthName(1990, 8));
+            Assert.AreEqual("Сентябрь", ds.FindMonthName(1990, 9));
+            Assert.AreEqual("Октябрь", ds.FindMonthName(1990, 10));
+            Assert.AreEqual("Ноябрь", ds.FindMonthName(1990, 11));
+            Assert.AreEqual("Декабрь", ds.FindMonthName(1990, 12));
 
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(1, -1);
+                ds.FindMonthName(1990, -1);
             });
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(1, 12);
+                ds.FindMonthName(1990, 13);
             });
         }
     }
