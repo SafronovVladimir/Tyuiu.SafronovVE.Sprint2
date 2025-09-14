@@ -33,7 +33,7 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        if (n > 0 && n < 13)
+        if (n > -1 && n < 12)
         { 
         string res = ds.FindMonthName(startYear, n);
         Console.WriteLine("Месяц: " + res);
